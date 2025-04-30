@@ -81,6 +81,7 @@ type FieldErrors = {
 }
 
 export default function Login() {
+  const { basePath } = useRouter()
   const [adminId, setAdminId] = useState('')
   const router = useRouter()
   const [password, setPassword] = useState('')
@@ -131,7 +132,7 @@ export default function Login() {
   return (
     <>
       <div>
-        <Image src="/image/logo/logo2x.png" alt="" />
+        <Image src={`${basePath}/image/logo/logo2x.png`} alt="" />
       </div>
 
       <H1>ログイン</H1>
