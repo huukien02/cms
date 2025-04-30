@@ -17,22 +17,25 @@
 
 // module.exports = nextConfig
 /** @type {import('next').NextConfig} */
-// const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   trailingSlash: false,
+
   output: 'export',
-  // basePath: isProd ? '/cms' : '',
-  // assetPrefix: isProd ? '/cms/' : '',
+
   reactStrictMode: true,
+
   experimental: {
     appDir: true,
   },
+
   experimental: {
     appDir: true,
   },
+
   compiler: {
     styledComponents: true,
   },
+
   images: {
     unoptimized: true,
   },
