@@ -23,11 +23,10 @@ const nextConfig = {
   basePath: isProd ? '/cms' : '',
   assetPrefix: isProd ? '/cms/' : '',
   images: {
-    unoptimized: true,
-    path: isProd ? '/cms/' : '/',
-    loader: 'default',
+    // unoptimized: true,
+    loader: "akamai",
+    path: "/",
   },
-  trailingSlash: true,
 }
 
 module.exports = nextConfig

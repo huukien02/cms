@@ -9,8 +9,7 @@
     "build:local": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "next generate",
-    "export": "next export"
+    "generate": "next generate"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
