@@ -24,7 +24,6 @@ const nextConfig = {
   assetPrefix: isProd ? '/cms/' : '',
   images: {
     unoptimized: true,
-    loader: "akamai",
   },
 }
 
