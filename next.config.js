@@ -19,6 +19,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/cms' : '',  assetPrefix: isProd ? '/cms/' : '',
   images: {
     unoptimized: true, // nếu bạn dùng <Image />
   },
