@@ -23,9 +23,8 @@ const nextConfig = {
   basePath: isProd ? '/cms' : '',
   assetPrefix: isProd ? '/cms/' : '',
   images: {
-    // unoptimized: true,
+    unoptimized: true,
     loader: "akamai",
-    path: "/",
   },
 }
 
