@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+  background-color: #fafafc;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* html {
+    color-scheme: dark;
+  } */
+}
+
+li {
+  list-style: none;
+}
+
+input[type='checkbox']:checked:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight:after {
+  content: '';
+  background-color: #007aff;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 11px;
+}
+
+.react-datepicker__day--selected {
+  background-color: #007aff !important;
+  border-radius: 50% !important;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #dadadd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 17px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #0070f3;
+  transition: width 0.2s ease-in-out;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: normal;
+}
+
+.react-datepicker__header {
+  background-color: #fff !important;
+  border-bottom: none !important;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #fff !important;
+}
+
+.react-datepicker {
+  border-color: #dadadd !important;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+.react-datepicker-popper[data-placement^='bottom'] {
+  margin-top: -20px !important;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+  border-color: #007aff !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  text-align: left !important;
+  margin-left: 18px !important;
+}
+
+.react-datepicker__navigation--previous {
+  left: 170px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+}
+
+.react-datepicker__day-names .react-datepicker__day-name {
+  color: rgba(60, 60, 67, 0.3) !important;
+}
+
+button,
+span {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0.5rem;
+  font-size: 17px;
+}
+
+td {
+  /* text-align: center; */
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea {
+    background-color: inherit !important;
+    border: 1px solid #dadadd !important;
+  }
+
+  input[type='checkbox'] {
+    border: 1px solid #000 !important;
+  }
+}
+.label-text {
+  color: #000;
+}
+
+@layer utilities {
+  .thumb-white::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-white rounded-full border border-gray-300 cursor-pointer;
+    margin-top: -2px; /* để canh giữa với track */
+  }
+
+  .thumb-white::-moz-range-thumb {
+    @apply w-6 h-6 bg-white rounded-full border border-gray-300 cursor-pointer;
+  }
+
+  .thumb-white:focus::-webkit-slider-thumb {
+    @apply ring-2 ring-blue-500;
+  }
+
+  .thumb-white:focus::-moz-range-thumb {
+    @apply ring-2 ring-blue-500;
+  }
+}
