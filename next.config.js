@@ -22,6 +22,9 @@ const nextConfig = {
   output: 'export',
   basePath: isProd ? '/cms' : '',
   assetPrefix: isProd ? '/cms/' : '',
+  compiler: {
+    styledComponents: true,
+  },
   images: {
     unoptimized: true,
   },
