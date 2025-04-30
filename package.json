@@ -2,6 +2,7 @@
   "name": "cms",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://huukien02.github.io/cms",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

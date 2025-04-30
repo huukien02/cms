@@ -18,14 +18,12 @@
 // module.exports = nextConfig
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/cms' : '',
-  assetPrefix: isProd ? '/cms/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/cms' : '',  assetPrefix: isProd ? '/cms/' : '',
   images: {
-    unoptimized: true, // nếu bạn dùng <Image />
+    unoptimized: true,
   },
 }
 
