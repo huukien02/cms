@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Styled from 'styled-components'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 const HeaderElement = Styled.header`
   background: #E6791A 0% 0% no-repeat padding-box;
@@ -37,7 +38,7 @@ const LogoImage = Styled.img`
 const LogoCaption = Styled.figcaption`
   font-size: 14px;
   color: #ffffff;
-`;
+`
 
 const LeftContents = Styled.div`
   display: flex;
@@ -76,13 +77,18 @@ const Button = Styled.button`
 `
 
 export const HeaderAdmin = ({ user }: { user: any }) => {
+  const { basePath } = useRouter()
+
   return (
     <>
       <HeaderElement>
         <HeaderContent>
           <LeftContents>
             <Logo>
-              <LogoImage src="/image/logo/text_logo@2x.png" alt="" />
+              <LogoImage
+                src={`${basePath}/image/logo/text_logo@2x.png`}
+                alt=""
+              />
             </Logo>
             <LogoCaption>AdminCMS</LogoCaption>
           </LeftContents>
