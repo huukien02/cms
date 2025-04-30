@@ -24,6 +24,7 @@ const nextConfig = {
   assetPrefix: isProd ? '/cms/' : '',
   images: {
     unoptimized: true,
+    path: isProd ? '/cms/' : '/',
   },
 }
 
