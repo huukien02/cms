@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'HiraginoKakuGothicProN-W3';
-  src: url('.../font/hiragino-kaku-gothic-pro-w3.otf') format('opentype');
+  src: url('cms/font/hiragino-kaku-gothic-pro-w3.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'HiraginoKakuGothicProN-W6';
   /* src: url('/font/hiragino-kaku-gothic-pro-w6.otf') format('opentype'); */
-  src: url('.../font/hiragino-kaku-gothic-w6.ttc') format('truetype');
+  src: url('cms/font/hiragino-kaku-gothic-w6.ttc') format('truetype');
 }
 
 /* NotoSansJP-VariableFont_wght.ttf */
 
 @font-face {
   font-family: 'NotoSansJP';
-  src: url('.../font/NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  src: url('cms/font/NotoSansJP-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
