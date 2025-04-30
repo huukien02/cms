@@ -1,6 +1,6 @@
 import { TOKEN_ORG_USER } from '@/common/auth'
-import Cookies from 'js-cookie';
 import axios from 'axios'
+import Cookies from 'js-cookie';
 
 const axiosInstance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_BASE_HOST_URL,
