@@ -131,13 +131,8 @@ export default function Login() {
   return (
     <>
       <div>
-        {/* <Image src="/image/logo/logo@2x.png" alt="" /> */}
-        <img
-          src="/image/logo/logo@2x.png"
-          alt="Logo"
-          width="400"
-          height="300"
-        />
+        {/* <Image src="/image/logo/logo@2x.png" alt="" /> */
+        }
       </div>
 
       <H1>ログイン</H1>

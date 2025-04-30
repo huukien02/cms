@@ -136,7 +136,7 @@ export default function Login() {
           src="/image/logo/logo@2x.png"
           alt="Logo"
           width="400"
-          height="300"
+          height="00"
         />
       </div>
 
