@@ -25,6 +25,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
     path: isProd ? '/cms/' : '/',
+    loader: 'default',
   },
   trailingSlash: true,
 }
