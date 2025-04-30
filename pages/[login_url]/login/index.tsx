@@ -72,17 +72,7 @@ type FieldErrors = {
   password?: string
 }
 
-export async function getServerSideProps(context: {
-  params: { login_url: any }
-}) {
-  const { login_url } = context.params
-
-  return {
-    props: { login_url },
-  }
-}
-
-export default function Login({ login_url }: { login_url: string }) {
+export default function Login() {
   const router = useRouter()
   const { basePath } = useRouter()
   const [adminId, setAdminId] = useState('')
@@ -93,7 +83,7 @@ export default function Login({ login_url }: { login_url: string }) {
     id: string
     name: string
   } | null>(null)
-  // const { login_url } = router.query
+  const { login_url } = router.query
 
   useEffect(() => {
     if (login_url) {
