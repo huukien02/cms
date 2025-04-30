@@ -73,14 +73,15 @@ type FieldErrors = {
 }
 
 export default function Login() {
-  const [adminId, setAdminId] = useState('')
   const router = useRouter()
+  const { basePath } = useRouter()
+  const [adminId, setAdminId] = useState('')
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [validationErrors, setValidationErrors] = useState<FieldErrors>({})
   const [loginId, setLoginId] = useState<{
-    id: string,
-    name: string,
+    id: string
+    name: string
   } | null>(null)
   const { login_url } = router.query
 
@@ -94,7 +95,7 @@ export default function Login() {
           if (data) {
             setLoginId({
               id: data.data.id,
-              name: data.data.name
+              name: data.data.name,
             })
             Cookies.set('login_url', data.data.login_url, { expires: 7 })
           }
@@ -159,7 +160,7 @@ export default function Login() {
   return (
     <>
       <div>
-        <Image src="/image/logo/logo@2x.png" alt="" />
+        <Image src={`${basePath}/image/logo/logo2x.png`} alt="" />
       </div>
 
       <H1>ログイン</H1>
