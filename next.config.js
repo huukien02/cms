@@ -26,6 +26,7 @@ const nextConfig = {
     unoptimized: true,
     path: isProd ? '/cms/' : '/',
   },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
