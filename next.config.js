@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: false,
+  trailingSlash: true,
 
   output: 'export',
 
