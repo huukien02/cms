@@ -135,7 +135,7 @@ export default function Login() {
         <Image src={`${basePath}/image/logo/logo2x.png`} alt="" />
       </div>
 
-      <H1>ログイン</H1>
+      <H1>ログイン-Test</H1>
       <div>
         <Input
           type="email"
