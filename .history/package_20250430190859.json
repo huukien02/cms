@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "build:local": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "next generate"
+    "generate": "next generate",
+    "build": "next build",
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
